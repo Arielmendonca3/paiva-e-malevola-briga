@@ -2,155 +2,111 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-  background-color: #0b0a10;
+  background-color: #0b0914;
   color: #ffffff;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
-/* Header estilizado com cores chamativas */
 header {
-  background: linear-gradient(135deg, #ff0055, #7a00ff, #ffea00);
-  background-size: 300% 300%;
-  animation: gradientAnimation 6s ease infinite;
+  background: linear-gradient(90deg, #ff0055, #7000ff, #ffbb00);
   padding: 40px 20px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(255, 0, 85, 0.5);
-}
-
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  box-shadow: 0 4px 15px rgba(255, 0, 85, 0.4);
 }
 
 header h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
+  font-size: 2.4rem;
   text-transform: uppercase;
-  text-shadow: 3px 3px 6px #000;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.sub-title {
-  color: #ffe600;
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-top: 10px;
-  text-shadow: 1px 1px 3px #000;
+header p {
+  color: #ffea00;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 8px;
 }
 
-/* Container principal */
 main {
   max-width: 900px;
   margin: 30px auto;
   padding: 0 20px;
 }
 
-/* Seção do Vídeo */
-.video-section {
+.video-container {
   margin-bottom: 40px;
-  text-align: center;
 }
 
-.video-section h2, .faq-section h2 {
+.video-container h2, .info-section h2 {
   color: #00f0ff;
-  font-size: 1.6rem;
-  text-transform: uppercase;
+  font-size: 1.5rem;
   margin-bottom: 20px;
-  border-left: 6px solid #ff0055;
-  padding-left: 12px;
-  text-align: left;
+  border-left: 5px solid #ff0055;
+  padding-left: 10px;
 }
 
-.video-card {
+.video-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  background: linear-gradient(90deg, #1f0033, #4a00e0);
-  border: 3px solid #ffe600;
-  border-radius: 15px;
+  gap: 15px;
+  background: linear-gradient(135deg, #1f0036, #3b0080);
+  border: 2px solid #ff0055;
+  border-radius: 12px;
   padding: 25px;
-  text-decoration: none;
   color: #ffffff;
-  box-shadow: 0 0 15px rgba(255, 230, 0, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(255, 0, 85, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.video-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 30px rgba(255, 0, 85, 0.8);
-  border-color: #ff0055;
-}
-
-.play-icon {
-  font-size: 3rem;
-  color: #ffe600;
-  background: #ff0055;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #ff0055;
-}
-
-.video-info h3 {
-  font-size: 1.3rem;
-  color: #ffe600;
-  margin-bottom: 5px;
-}
-
-.video-info p {
-  font-size: 0.95rem;
-  color: #d1d1d1;
-}
-
-/* Estilização da lista de perguntas */
-.faq-item {
-  background-color: #161521;
-  border: 2px solid #2a283d;
-  border-left: 6px solid #ff0055;
-  border-radius: 10px;
-  margin-bottom: 16px;
-  padding: 20px;
-  transition: transform 0.2s, border-color 0.2s;
-}
-
-.faq-item:hover {
-  transform: translateX(5px);
+.video-link:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.6);
   border-color: #00f0ff;
 }
 
-.faq-question {
-  color: #00f0ff;
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+.play-btn {
+  font-size: 2rem;
+  color: #ffbb00;
 }
 
-.faq-answer {
+.info-card {
+  background-color: #171524;
+  border: 1px solid #2d2945;
+  border-left: 5px solid #ff0055;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 12px;
+  transition: background-color 0.2s;
+}
+
+.info-card:hover {
+  background-color: #211e33;
+}
+
+.info-number {
+  color: #00f0ff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.info-text {
   color: #e0e0e0;
-  font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
-  color: #888;
-  font-size: 0.85rem;
-  border-top: 1px solid #222;
-}
-
-/* Responsividade para celulares */
-@media (max-width: 600px) {
-  header h1 { font-size: 1.8rem; }
-  .video-card { flex-direction: column; text-align: center; }
-  .play-icon { width: 55px; height: 55px; font-size: 2rem; }
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 40px;
 }
