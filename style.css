@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f0f13;
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+
+header {
+  background: linear-gradient(45deg, #ff0055, #ff5000);
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 15px rgba(255, 0, 85, 0.4);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ffe600;
+  font-weight: bold;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.video-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.video-container h2, .faq-container h2 {
+  color: #ffe600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-left: 5px solid #ff0055;
+  padding-left: 10px;
+}
+
+.video-card {
+  display: block;
+  background: linear-gradient(135deg, #25003e, #4a00e0);
+  border: 3px solid #ff0055;
+  border-radius: 12px;
+  padding: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #ff0055;
+}
+
+.play-btn {
+  font-size: 3rem;
+  color: #ffe600;
+  margin-bottom: 10px;
+}
+
+.faq-item {
+  background-color: #1a1a24;
+  border: 1px solid #333;
+  border-left: 4px solid #ff5000;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 20px;
+  transition: background-color 0.2s;
+}
+
+.faq-item:hover {
+  background-color: #242432;
+}
+
+.faq-question {
+  color: #00f0ff;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.faq-answer {
+  color: #ddd;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #777;
+  font-size: 0.9rem;
+}
